@@ -1,0 +1,12 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Color x:Key="DefaultBorderColor">#CB4141</Color>
+    <Color x:Key="DefaultBackgroundColor">#EFEFEF</Color>
+    <SolidColorBrush x:Key="DefaultHeaderBorderBrush" Color="{DynamicResource DefaultBorderColor}" />
+    <SolidColorBrush x:Key="DefaultBorderBrush" Color="#ACACAC" />
+    <SolidColorBrush x:Key="DefaultBackgroundBrush" Color="{DynamicResource DefaultBackgroundColor}" />
+    <Brush x:Key="ColorIconBrush">DarkSlateBlue</Brush>
+    <Brush x:Key="DarkIconBrush">#585858</Brush>
+    <Brush x:Key="TitleBrush">Black</Brush>
+    <Brush x:Key="BorderBrush">Gray</Brush>
+</ResourceDictionary>

@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:viewModels="clr-namespace:Generator4Developers.Presentation.Windows.ViewModels"
+                    xmlns:views="clr-namespace:Generator4Developers.Presentation.Windows.Views">
+    <DataTemplate DataType="{x:Type viewModels:GuidGeneratorViewModel}">
+        <views:GuidGeneratorView />
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type viewModels:PasswordGeneratorViewModel}">
+        <views:PasswordGeneratorView />
+    </DataTemplate>
+    <DataTemplate DataType="{x:Type viewModels:ConnectionStringGeneratorViewModel}">
+        <views:ConnectionStringGeneratorView />
+    </DataTemplate>
+</ResourceDictionary>

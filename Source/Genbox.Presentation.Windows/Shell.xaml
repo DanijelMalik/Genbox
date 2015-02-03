@@ -1,0 +1,68 @@
+﻿<Window x:Class="Generator4Developers.Presentation.Windows.Shell"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:properties="clr-namespace:Generator4Developers.Presentation.Windows.Properties"
+        xmlns:viewModels="clr-namespace:Generator4Developers.Presentation.Windows.ViewModels"
+        xmlns:views="clr-namespace:Generator4Developers.Presentation.Windows.Views"
+        MinWidth="{StaticResource ApplicationWidth}"
+        MaxWidth="{StaticResource ApplicationWidth}"
+        mc:Ignorable="d"
+        Title="{x:Static properties:Resources.Title_Application}"
+        d:DataContext="{d:DesignInstance viewModels:MainViewModel}"
+        SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen"
+        Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"
+        ResizeMode="NoResize" SnapsToDevicePixels="True" Topmost="{Binding StayOnTop}" Icon="Icon.ico">
+    <Grid>
+        <views:MainView>
+            <views:MainView.RenderTransform>
+                <TranslateTransform />
+            </views:MainView.RenderTransform>
+            <views:MainView.Style>
+                <Style>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding IsShowSettings}" Value="True">
+                            <DataTrigger.EnterActions>
+                                <BeginStoryboard Storyboard="{StaticResource Storyboard_SlideOutToLeft}" />
+                            </DataTrigger.EnterActions>
+                            <DataTrigger.ExitActions>
+                                <BeginStoryboard Storyboard="{StaticResource Storyboard_SlideInFromLeft}" />
+                            </DataTrigger.ExitActions>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </views:MainView.Style>
+        </views:MainView>
+        <views:SettingsView Visibility="Collapsed">
+            <views:SettingsView.RenderTransform>
+                <TranslateTransform X="{StaticResource ApplicationWidth}" />
+            </views:SettingsView.RenderTransform>
+            <views:SettingsView.Style>
+                <Style>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding IsShowSettings}" Value="False">
+                            <DataTrigger.EnterActions>
+                                <BeginStoryboard Storyboard="{StaticResource Storyboard_SlideOutToRight}" />
+                            </DataTrigger.EnterActions>
+                            <DataTrigger.ExitActions>
+                                <BeginStoryboard Storyboard="{StaticResource Storyboard_SlideInFromRight}" />
+                            </DataTrigger.ExitActions>
+                        </DataTrigger>
+                        <EventTrigger RoutedEvent="UserControl.Loaded">
+                            <BeginStoryboard Storyboard.TargetProperty="(UserControl.Visibility)">
+                                <Storyboard>
+                                    <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)">
+                                        <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Collapsed}" />
+                                        <DiscreteObjectKeyFrame KeyTime="0:0:0.5" Value="{x:Static Visibility.Visible}" />
+                                    </ObjectAnimationUsingKeyFrames>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </Style.Triggers>
+                </Style>
+            </views:SettingsView.Style>
+        </views:SettingsView>
+
+    </Grid>
+</Window>
