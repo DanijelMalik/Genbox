@@ -21,7 +21,7 @@
     <RootNamespace>DanijelMalik.Generator4Developers_Extensibility_Vsix</RootNamespace>
     <AssemblyName>Generator4Developers.Extensibility.Vsix</AssemblyName>
     <SignAssembly>True</SignAssembly>
-    <AssemblyOriginatorKeyFile>..\Solution Items\Generator4Developers.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\Solution Items\Genbox.snk</AssemblyOriginatorKeyFile>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -156,8 +156,8 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\Solution Items\Generator4Developers.snk">
-      <Link>Generator4Developers.snk</Link>
+    <None Include="..\Solution Items\Genbox.snk">
+      <Link>Genbox.snk</Link>
     </None>
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>

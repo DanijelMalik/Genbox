@@ -44,7 +44,7 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>..\Solution Items\Generator4Developers.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>..\Solution Items\Genbox.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -173,8 +173,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="..\Solution Items\Generator4Developers.snk">
-      <Link>Generator4Developers.snk</Link>
+    <None Include="..\Solution Items\Genbox.snk">
+      <Link>Genbox.snk</Link>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
