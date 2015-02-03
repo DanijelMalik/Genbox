@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace Generator4Developers.Presentation.Windows
+namespace Genbox.Presentation.Windows
 {
     /// <summary>
     /// Interaction logic for App.xaml

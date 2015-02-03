@@ -1,8 +1,9 @@
 ﻿// Guids.cs
 // MUST match guids.h
+
 using System;
 
-namespace DanijelMalik.Generator4Developers_Extensibility_Vsix
+namespace Genbox.Extensibility.Vsix
 {
     static class GuidList
     {

@@ -1,4 +1,4 @@
-﻿namespace Generator4Developers.Presentation.Windows.Services
+﻿namespace Genbox.Presentation.Windows.Services
 {
     public enum GuidGeneratorMode
     {

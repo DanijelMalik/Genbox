@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Windows.Data;
 using System.Windows.Media;
 
-namespace Generator4Developers.Presentation.Windows.Converters
+namespace Genbox.Presentation.Windows.Converters
 {
     [ValueConversion(typeof(double), typeof(Brush))]
     public class ColorIndicatorConverter : IValueConverter

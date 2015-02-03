@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Input;
 
-namespace Generator4Developers.Presentation.Windows.Common
+namespace Genbox.Presentation.Windows.Common
 {
     public class RelayCommand : ICommand
     {

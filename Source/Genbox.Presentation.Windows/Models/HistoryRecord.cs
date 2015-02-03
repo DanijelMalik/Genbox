@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Generator4Developers.Presentation.Windows.Models
+namespace Genbox.Presentation.Windows.Models
 {
     public class HistoryRecord : Model
     {

@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Windows;
-using System.Runtime.InteropServices;
-using Microsoft.VisualStudio.Shell.Interop;
+﻿using System.Runtime.InteropServices;
 using Microsoft.VisualStudio.Shell;
 
-namespace DanijelMalik.Generator4Developers_Extensibility_Vsix
+namespace Genbox.Extensibility.Vsix
 {
     /// <summary>
     /// This class implements the tool window exposed by this package and hosts a user control.

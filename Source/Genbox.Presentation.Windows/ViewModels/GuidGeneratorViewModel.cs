@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
-using Generator4Developers.Presentation.Windows.Common;
-using Generator4Developers.Presentation.Windows.Properties;
-using Generator4Developers.Presentation.Windows.Services;
+using Genbox.Presentation.Windows.Common;
+using Genbox.Presentation.Windows.Properties;
+using Genbox.Presentation.Windows.Services;
 
-namespace Generator4Developers.Presentation.Windows.ViewModels
+namespace Genbox.Presentation.Windows.ViewModels
 {
     [GeneratorService]
     public class GuidGeneratorViewModel : ServiceViewModel

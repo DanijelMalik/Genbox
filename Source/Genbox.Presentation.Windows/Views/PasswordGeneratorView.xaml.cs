@@ -1,6 +1,6 @@
 ﻿using System.Windows.Controls;
 
-namespace Generator4Developers.Presentation.Windows.Views
+namespace Genbox.Presentation.Windows.Views
 {
     /// <summary>
     /// Interaction logic for GuidGeneratorView.xaml

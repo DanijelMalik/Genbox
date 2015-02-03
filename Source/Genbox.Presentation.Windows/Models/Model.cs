@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace Generator4Developers.Presentation.Windows.Models
+namespace Genbox.Presentation.Windows.Models
 {
     public abstract class Model : INotifyPropertyChanged
     {

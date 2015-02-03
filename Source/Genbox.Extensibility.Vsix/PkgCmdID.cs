@@ -1,8 +1,7 @@
 ﻿// PkgCmdID.cs
 // MUST match PkgCmdID.h
-using System;
 
-namespace DanijelMalik.Generator4Developers_Extensibility_Vsix
+namespace Genbox.Extensibility.Vsix
 {
     static class PkgCmdIDList
     {

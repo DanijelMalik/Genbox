@@ -7,8 +7,8 @@
     <ProjectGuid>{97E2CDAD-4841-4E64-B930-8B2C4271B7CF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Generator4Developers.Common</RootNamespace>
-    <AssemblyName>Generator4Developers.Common</AssemblyName>
+    <RootNamespace>Genbox.Common</RootNamespace>
+    <AssemblyName>Genbox.Common</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>

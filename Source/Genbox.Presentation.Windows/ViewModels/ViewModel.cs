@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace Generator4Developers.Presentation.Windows.ViewModels
+namespace Genbox.Presentation.Windows.ViewModels
 {
     public abstract class ViewModel : INotifyPropertyChanged
     {

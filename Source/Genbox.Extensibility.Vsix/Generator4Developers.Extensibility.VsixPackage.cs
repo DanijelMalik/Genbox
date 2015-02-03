@@ -1,15 +1,12 @@
 ﻿using System;
+using System.ComponentModel.Design;
 using System.Diagnostics;
 using System.Globalization;
 using System.Runtime.InteropServices;
-using System.ComponentModel.Design;
-using Microsoft.Win32;
-using Microsoft.VisualStudio;
-using Microsoft.VisualStudio.Shell.Interop;
-using Microsoft.VisualStudio.OLE.Interop;
 using Microsoft.VisualStudio.Shell;
+using Microsoft.VisualStudio.Shell.Interop;
 
-namespace DanijelMalik.Generator4Developers_Extensibility_Vsix
+namespace Genbox.Extensibility.Vsix
 {
     /// <summary>
     /// This is the class that implements the package exposed by this assembly.

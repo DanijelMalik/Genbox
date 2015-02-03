@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Generator4Developers.Presentation.Windows.Properties;
+using Genbox.Presentation.Windows.Properties;
 
-namespace Generator4Developers.Presentation.Windows.Common
+namespace Genbox.Presentation.Windows.Common
 {
     public class EnumHelper
     {

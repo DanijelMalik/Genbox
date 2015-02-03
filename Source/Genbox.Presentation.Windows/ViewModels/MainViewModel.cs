@@ -4,11 +4,11 @@ using System.Linq;
 using System.Reflection;
 using System.Windows;
 using System.Windows.Input;
-using Generator4Developers.Presentation.Windows.Common;
-using Generator4Developers.Presentation.Windows.Models;
-using Generator4Developers.Presentation.Windows.Services;
+using Genbox.Presentation.Windows.Common;
+using Genbox.Presentation.Windows.Models;
+using Genbox.Presentation.Windows.Services;
 
-namespace Generator4Developers.Presentation.Windows.ViewModels
+namespace Genbox.Presentation.Windows.ViewModels
 {
     public sealed class MainViewModel : ViewModel
     {

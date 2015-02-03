@@ -1,6 +1,6 @@
-﻿using Generator4Developers.Presentation.Windows.ViewModels;
+﻿using Genbox.Presentation.Windows.ViewModels;
 
-namespace Generator4Developers.Presentation.Windows
+namespace Genbox.Presentation.Windows
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Windows;
 using System.Windows.Data;
 
-namespace Generator4Developers.Presentation.Windows.Converters
+namespace Genbox.Presentation.Windows.Converters
 {
     [ValueConversion(typeof(bool), typeof(Visibility))]
     public class InverseBooleanToVisibilityConverter : IValueConverter

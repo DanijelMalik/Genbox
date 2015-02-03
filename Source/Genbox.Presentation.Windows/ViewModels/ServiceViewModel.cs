@@ -1,7 +1,7 @@
 using System;
-using Generator4Developers.Presentation.Windows.Services;
+using Genbox.Presentation.Windows.Services;
 
-namespace Generator4Developers.Presentation.Windows.ViewModels
+namespace Genbox.Presentation.Windows.ViewModels
 {
     public abstract class ServiceViewModel : ViewModel, IGeneratorService
     {

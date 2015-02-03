@@ -1,6 +1,6 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:converters="clr-namespace:Generator4Developers.Presentation.Windows.Converters">
+                    xmlns:converters="clr-namespace:Genbox.Presentation.Windows.Converters">
     <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
     <converters:ColorIndicatorConverter x:Key="ColorIndicatorConverter" />
     <converters:InverseBooleanConverter x:Key="InverseBooleanConverter" />
