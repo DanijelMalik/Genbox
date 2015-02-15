@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!--  This is the file that defines the actual layout and type of the commands.
+        It is divided in different sections (e.g. command definition, command
+        placement, ...), with each defining a specific set of properties.
+        See the comment before each section for more details about how to
+        use it. -->
+
+  <!--  The VSCT compiler (the tool that translates this file into the binary 
+        format that VisualStudio will consume) has the ability to run a preprocessor 
+        on the vsct file; this preprocessor is (usually) the C++ preprocessor, so 
+        it is possible to define includes and macros with the same syntax used 
+        in C++ files. Using this ability of the compiler here, we include some files 
+        defining some of the constants that we will use inside the file. -->
+
+  <!--This is the file that defines the IDs for all the commands exposed by VisualStudio. -->
+  <Extern href="stdidcmd.h" />
+
+  <!--This header contains the command ids for the menus provided by the shell. -->
+  <Extern href="vsshlids.h" />
+
+
+  <!--The Commands section is where we the commands, menus and menu groups are defined.
+      This section uses a Guid to identify the package that provides the command defined inside it. -->
+  <Commands package="GenboxPackage">
+    <!-- Inside this section we have different sub-sections: one for the menus, another  
+    for the menu groups, one for the buttons (the actual commands), one for the combos 
+    and the last one for the bitmaps used. Each element is identified by a command id that  
+    is a unique pair of guid and numeric identifier; the guid part of the identifier is usually  
+    called "command set" and is used to group different command inside a logically related  
+    group; your package should define its own command set in order to avoid collisions  
+    with command ids defined by other packages. -->
+
+
+    <!-- In this section you can define new menu groups. A menu group is a container for 
+         other menus or buttons (commands); from a visual point of view you can see the 
+         group as the part of a menu contained between two lines. The parent of a group 
+         must be a menu. -->
+    <Groups>
+      <Group guid="GenboxCmdSet" id="MySubMenuGroup" priority="0x0600">
+        <Parent guid="GenboxCmdSet" id="SubMenu" />
+      </Group>
+    </Groups>
+    <Menus>
+
+      <Menu guid="GenboxCmdSet" id="SubMenu" priority="0x000" type="Menu">
+        <Parent guid="guidSHLMainMenu" id="IDG_VS_TOOLS_EXT_TOOLS" />
+        <Strings>
+          <ButtonText>Genbox</ButtonText>
+          <CommandName>Genbox</CommandName>
+        </Strings>
+      </Menu>
+    </Menus>
+
+    <Buttons>
+      <Button guid="GenboxCmdSet" id="PasswordCommandId" priority="0x0101" type="Button">
+        <Parent guid="GenboxCmdSet" id="MySubMenuGroup" />
+        <Strings>
+          <CommandName>PasswordCommandId</CommandName>
+          <ButtonText>Genbox.Password</ButtonText>
+          <MenuText>Password</MenuText>
+        </Strings>
+      </Button>
+      <Button guid="GenboxCmdSet" id="GuidCommandId" priority="0x0101" type="Button">
+        <Parent guid="GenboxCmdSet" id="MySubMenuGroup" />
+        <Strings>
+          <CommandName>GuidCommandId</CommandName>
+          <ButtonText>GUID</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+
+  <Symbols>
+    <GuidSymbol name="GenboxPackage" value="{bc388390-9c8e-4f89-8266-0bd3ecefe1cc}" />
+    <GuidSymbol name="GenboxCmdSet" value="{78b90208-d4ae-44fc-8c74-b18c886dc4bf}">
+      <IDSymbol name="MySubMenuGroup" value="0x1030" />
+      <IDSymbol name="SubMenu" value="0x1031" />
+      <IDSymbol name="PasswordCommandId" value="0x0201" />
+      <IDSymbol name="GuidCommandId" value="0x0202" />
+    </GuidSymbol>
+
+    <GuidSymbol name="guidImages" value="{025ae962-3b28-455f-B817-6c83fea8c4e6}">
+      <IDSymbol name="blank" value="1" />
+      <IDSymbol name="blueCheck" value="2" />
+      <IDSymbol name="yellowDot" value="3" />
+      <IDSymbol name="question" value="4" />
+      <IDSymbol name="chain" value="5" />
+      <IDSymbol name="info" value="6" />
+    </GuidSymbol>
+
+  </Symbols>
+
+</CommandTable>

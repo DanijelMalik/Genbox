@@ -12,13 +12,13 @@ namespace Genbox.Extensibility.Vsix
     /// This class derives from the ToolWindowPane class provided from the MPF in order to use its 
     /// implementation of the IVsUIElementPane interface.
     /// </summary>
-    [Guid("0ac85823-f815-43f2-88f9-cb8c7122fc79")]
-    public class MyToolWindow : ToolWindowPane
+    [Guid(GuidList.GenboxToolWindow)]
+    public class GenboxToolWindow : ToolWindowPane
     {
         /// <summary>
         /// Standard constructor for the tool window.
         /// </summary>
-        public MyToolWindow() :
+        public GenboxToolWindow() :
             base(null)
         {
             // Set the window title reading it from the resources.
@@ -34,7 +34,7 @@ namespace Genbox.Extensibility.Vsix
             // This is the user control hosted by the tool window; Note that, even if this class implements IDisposable,
             // we are not calling Dispose on this object. This is because ToolWindowPane calls Dispose on 
             // the object returned by the Content property.
-            base.Content = new MyControl();
+            base.Content = new WrapperView();
         }
     }
 }

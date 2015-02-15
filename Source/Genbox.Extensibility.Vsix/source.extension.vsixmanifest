@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="bc388390-9c8e-4f89-8266-0bd3ecefe1cc" Version="1.0" Language="en-US" Publisher="Danijel Malik" />
-    <DisplayName>Generator4Developers.Extensibility.Vsix</DisplayName>
+    <Identity Id="bc388390-9c8e-4f89-8266-0bd3ecefe1cc" Version="0.0.1" Language="en-US" Publisher="Danijel Malik" />
+    <DisplayName>Genbox</DisplayName>
     <Description>Information about my package</Description>
   </Metadata>
   <Installation InstalledByMsi="false">
-    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[12.0]" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[10.0,14.0)" />
   </Installation>
   <Dependencies>
     <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
@@ -14,5 +14,6 @@
   </Dependencies>
   <Assets>
     <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
   </Assets>
 </PackageManifest>

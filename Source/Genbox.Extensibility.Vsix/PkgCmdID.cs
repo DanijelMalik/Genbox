@@ -5,8 +5,8 @@ namespace Genbox.Extensibility.Vsix
 {
     static class PkgCmdIDList
     {
-        public const uint cmdidGenerator4DevelopersNewPatternGuid =        0x100;
-        public const uint cmdidGenerator4Developers =    0x101;
+        public const uint CommandIdPassword = 0x0201;
+        public const uint cmdidGenbox =    0x101;
 
     };
 }
